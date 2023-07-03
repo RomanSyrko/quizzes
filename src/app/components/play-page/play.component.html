@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="content">
+    <div>
+      <div class="spaceBtw">
+        <small>Question № {{index + 1}}/10</small>
+        <small>Timer: {{time}}/60sec</small>
+      </div>
+      <h3 class="question">{{apiService.questionsList[index]?.question}}</h3>
+    </div>
+    <div class="dFlex">
+      <button (click)="verifyAnswer($event, 'True')">True</button>
+      <button (click)="verifyAnswer($event, 'False')">False</button>
+    </div>
+  </div>
+</div>

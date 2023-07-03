@@ -12,3 +12,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - As a user while playing a quiz I should be able to cancel a quiz and go to the Home page.
 - As a user while playing a quiz I should not be able to go to the next questions until I choose some answer.
 - As a user after answering the last question I should be navigated to the Finish page and see statistics of how many points I got, how many answers were correct and time it took (+2 statistical options - Up to you).
+
+![pic](./pictures/Screenshot.png)
