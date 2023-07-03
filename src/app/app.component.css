@@ -1,0 +1,17 @@
+nav{
+  background: lightgrey;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+
+}
+
+ul{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
