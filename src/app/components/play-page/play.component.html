@@ -5,7 +5,7 @@
         <small>Question № {{index + 1}}/10</small>
         <small>Timer: {{time}}/60sec</small>
       </div>
-      <h3 class="question">{{apiService.questionsList[index]?.question}}</h3>
+      <h3 class="question" [innerHtml]=[apiService.questionsList[index]?.question]></h3>
     </div>
     <div class="dFlex">
       <button (click)="verifyAnswer($event, 'True')">True</button>
@@ -13,3 +13,5 @@
     </div>
   </div>
 </div>
+
+
