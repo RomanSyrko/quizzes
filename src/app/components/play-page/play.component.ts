@@ -40,14 +40,16 @@ export class PlayComponent implements OnInit {
   };
 
   startTimer(seconds: number) {
-    const sub = timer(0, 1000)
-      .subscribe(n => {
-        this.time = n
-        if (n === seconds || this.index === this.apiService?.questionsList?.length) {
-          this.router.navigate(['/finish']);
-          sub.unsubscribe();
-        }
-      })
+    setTimeout(() => {
+      const sub = timer(0, 1000)
+        .subscribe(n => {
+          this.time = n
+          if (n === seconds || this.index === this.apiService?.questionsList?.length) {
+            this.router.navigate(['/finish']);
+            sub.unsubscribe();
+          }
+        })
+    }, 1000)
   };
 
 }

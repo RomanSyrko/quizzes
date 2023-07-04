@@ -8,13 +8,15 @@ import {PlayComponent} from './components/play-page/play.component';
 import {FinishComponent} from './components/finish-page/finish.component';
 import {HttpClientModule} from "@angular/common/http";
 import {RouterLink} from "@angular/router";
+import { ErrorPageComponent } from './components/error-page/error-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PlayComponent,
-    FinishComponent
+    FinishComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
